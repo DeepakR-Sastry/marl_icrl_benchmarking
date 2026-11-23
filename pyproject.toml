@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "marl-icrl-bench"
+version = "0.1.0"
+description = "Multi-agent Inverse Constraint RL methods and a fair way to compare them."
+requires-python = ">=3.13"
+dependencies = [
+    # Sister project, pinned to one commit (docs/decisions.md 2026-11-23)
+    "icrl-bench @ git+https://github.com/DeepakR-Sastry/icrl_benchmarking.git@72fcf28a72259e30c2a37628d3bf09187e7cc9db",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["marl_icrl_bench*"]

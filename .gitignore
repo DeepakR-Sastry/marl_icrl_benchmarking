@@ -1,0 +1,8 @@
+CLAUDE.md
+/docs/
+/runs/
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+*.pkl
